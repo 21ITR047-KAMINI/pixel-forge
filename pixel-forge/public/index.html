@@ -1,43 +1,306 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Pixel Forge Platform
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="font-roboto bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <a class="text-2xl font-bold text-gray-800" href="#">
+     Pixel Forge
+    </a>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#features">
+       Features
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#showcase">
+       Showcase
+      </a>
+     </li>
+     <li>
+      <a class="text-gray-600 hover:text-gray-800" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="bg-gray-200 py-20" id="home">
+   <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold text-gray-800">
+     Welcome to Pixel Forge
+    </h1>
+    <p class="mt-4 text-gray-600">
+     Manage, distribute, and showcase your 3D assets and experiences.
+    </p>
+    <img alt="A futuristic interface showcasing 3D asset management and distribution" class="mx-auto mt-8" height="400" src="https://storage.googleapis.com/a1aa/image/ZCvW47QulibaMFGjMN7XwdHr7JPo1eXnyRh1Nf6QUWfDOdDoA.jpg" width="600"/>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="bg-white py-20" id="features">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 text-center">
+     Key Features
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing 3D asset management" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/Van7TPlnny7iBxlgeWeLA7OloOFsuygrQDev0T572Um0NdDoA.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       3D Asset Management
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Organize and access your 3D assets with ease.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing distribution of 3D and AR experiences" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/KHAQfk2tbUyOMKuBZVZ2pwibJ6A0VvO4S8TlA7CgByeQnuBUA.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Distribution of 3D &amp; AR Experiences
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Reach a wider audience with your 3D and AR creations.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing collaboration" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/UMB4yB0RQNrvGd8xer4ZaKMweMIBZ9xGXvxrjZHsNBtDnuBUA.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Collaboration
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Share projects and get feedback from the community.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing showcase work" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/UPnjy5rf8Y3QSqEIqVZGftXcF9TJ5lhAC0v8UNUhzOTTnuBUA.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Showcase Work
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Gain visibility by showcasing your 3D models and projects.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing market-leading 3D player" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/MebNyzR5IF1aDafBzpLMwefKtSfDIHL6MbJf16JrlakgxpbAF.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Market-leading 3D Player
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Interactive and configurable 3D player ready for VR and AR.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing cross-platform compatibility" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/beP0ZujUxXWpYyJMtfKCe3nFlOf67rGoAthUQ0LyDtfl30NgC.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Cross-Platform Compatibility
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Works seamlessly across all operating systems, browsers, and devices.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing embeddable content" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/nvmfR90iQKWDIqr3fIPCAOenfbH3MhmkPpqGMiln2f9o60NgC.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Embeddable Content
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Embed your 3D models in eCommerce sites, advertising, and social media.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing inspiration and learning" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/U0bCnHLO9F6gEhk7FKrMgORkC7l7zUgFbdlzh19h7ihvpbAF.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Inspiration and Learning
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Get inspired and learn from millions of community members.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing diverse asset categories" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/ehNQawvHZOWVd67DhuqgVDHg9ROBU0R7F6rGl8HGdiriT3AKA.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Diverse Asset Categories
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       From low-poly assets to animated rigs and digital scans.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing model inspection" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/ehd8slJunl3WZq2TKQmi8q1ZfSYfZlsTETs4gw9XQ5ef30NgC.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Model Inspection
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Preview model topology, UVs, and textures with the 3D viewer and model inspector.
+      </p>
+     </div>
+     <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+      <img alt="Icon representing powerful rendering tools" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/fDDU9V25U9UCBSQfzWRgvbNLZrN7Q0rUke2G7fWE40Khc6GQB.jpg" width="100"/>
+      <h3 class="text-xl font-bold text-gray-800 mt-4 text-center">
+       Powerful Rendering Tools
+      </h3>
+      <p class="mt-2 text-gray-600 text-center">
+       Access a powerful Physically Based Rendering toolset for setting up lighting, materials, animations, and more.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Showcase Section -->
+  <section class="bg-gray-200 py-20" id="showcase">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 text-center">
+     Showcase
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of a 3D model of a futuristic car" class="w-full" height="300" src="https://storage.googleapis.com/a1aa/image/kMikagGgnS5NJFG0r4VqoQrl4dfBXTsXWANC1qY2irdmT3AKA.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Futuristic Car Model
+       </h3>
+       <p class="mt-2 text-gray-600">
+        A highly detailed 3D model of a futuristic car.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of a 3D model of a medieval castle" class="w-full" height="300" src="https://storage.googleapis.com/a1aa/image/cjvkkSJizd5IFpZjSZZdNQ8IXWuhVs5K8iOEyt8miNoypbAF.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Medieval Castle
+       </h3>
+       <p class="mt-2 text-gray-600">
+        An intricate 3D model of a medieval castle.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of a 3D model of a sci-fi spaceship" class="w-full" height="300" src="https://storage.googleapis.com/a1aa/image/B2yUJi9cqwrRBNflbTKXohc1LIC5FJ0vFIG6FmFnveQRnuBUA.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Sci-Fi Spaceship
+       </h3>
+       <p class="mt-2 text-gray-600">
+        A detailed 3D model of a sci-fi spaceship.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of a 3D model of a fantasy dragon" class="w-full" height="300" src="https://storage.googleapis.com/a1aa/image/CbM1x5IFIHrvI1bjQIstSg9Vrhg1lestF8yN4mNpMaGcT3AKA.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Fantasy Dragon
+       </h3>
+       <p class="mt-2 text-gray-600">
+        A majestic 3D model of a fantasy dragon.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of a 3D model of a modern skyscraper" class="w-full" height="300" src="https://storage.googleapis.com/a1aa/image/GGZsP3Cx4spAHZShO6fTZCCpJHvRTUKB3vduqaDay8JnT3AKA.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Modern Skyscraper
+       </h3>
+       <p class="mt-2 text-gray-600">
+        A sleek 3D model of a modern skyscraper.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img alt="Screenshot of a 3D model of a vintage airplane" class="w-full" height="300" src="https://storage.googleapis.com/a1aa/image/qfJ5rSrNg1QefIrLaIQFaXhfYPJ2AN3q6r7VwxXU6eH520NgC.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="text-xl font-bold text-gray-800">
+        Vintage Airplane
+       </h3>
+       <p class="mt-2 text-gray-600">
+        A classic 3D model of a vintage airplane.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-white py-20" id="contact">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 text-center">
+     Contact Us
+    </h2>
+    <p class="mt-4 text-gray-600 text-center">
+     Reach out to us for any inquiries or collaborations.
+    </p>
+    <div class="flex justify-center mt-8">
+     <form class="w-full max-w-lg">
+      <div class="mb-4">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+        Name
+       </label>
+       <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" placeholder="Your Name" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+        Email
+       </label>
+       <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" placeholder="Your Email" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+        Message
+       </label>
+       <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your Message" rows="4"></textarea>
+      </div>
+      <div class="flex items-center justify-between">
+       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Send Message
+       </button>
+      </div>
+     </form>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-4">
+   <div class="container mx-auto px-4 text-center text-white">
+    <p>
+     © 2025 Pixel Forge. All rights reserved.
+    </p>
+    <div class="flex justify-center space-x-4 mt-2">
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-400" href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
